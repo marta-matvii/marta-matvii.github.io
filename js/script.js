@@ -1,0 +1,1 @@
+$(window).scroll((e) => $('.planet-top').css({'transform': `rotate(${$(this).scrollTop() / 5}deg)`}));

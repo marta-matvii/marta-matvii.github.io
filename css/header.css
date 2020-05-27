@@ -1,0 +1,154 @@
+@font-face {
+    font-family: DIN_Condensed;
+    src: url(./fonts/DIN_Condensed.otf);
+}
+
+@font-face {
+    font-family: BloggerSans;
+    src: url(./fonts/Bloggersans.woff);
+}
+
+@font-face {
+    font-family: BloggerSans;
+    src: url(./fontsBloggersansbold.woff);
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: src: local('Roboto'), local('Roboto-Regular'),
+        url('../fonts/roboto-v20-cyrillic-regular.woff') format('woff'),
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Roboto Bold'), local('Roboto-Bold'),
+        url('../fonts/roboto-v20-cyrillic-700.woff') format('woff'),
+
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Roboto Black'), local('Roboto-Black'),
+        url('../fonts/roboto-v20-cyrillic-900.woff') format('woff'),
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    color: #fff;
+    max-width: 100vw;
+    overflow-x: hidden;
+    min-height: 100vh;
+    justify-content: center;
+    position: relative;
+}
+
+#planet {
+    position: relative;
+    min-height: 100vh;
+}
+
+#planet .section-content {
+    margin-top: 0;
+    padding-top: 24vh;
+}
+
+.planet {
+    position: absolute;
+    height: 16vw;
+    width: 16vw;
+    top: 35%;
+    transition-property: all;
+    transition-duration: .7s;
+    transition-timing-function: ease-in-out;
+}
+
+.w100 {
+    width: 100%;
+    display: block;
+}
+
+
+.planet-left {
+    left: -7vw;
+}
+
+.planet-right {
+
+    right: -7vw;
+}
+
+.planet-top {
+    left: 50%;
+    margin-left: -10vw;
+    top: -17%;
+    width: 20vw;
+    height: 20vw;
+}
+
+.logo {
+    width: 40vw;
+    position: relative;
+    z-index: 1;
+
+}
+
+.logo p {
+    font-size: 7vw;
+    color: rgb(80, 165, 175);
+    font-family: DIN_Condensed;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+section {
+    position: relative;
+
+}
+
+@media screen and (max-width: 414px) {
+    .planet-right {
+        display: none;
+    }
+
+    .planet {
+        width: 26vw;
+        height: 16vh;
+    }
+
+    .planet-left {
+        top: 15vh;
+        left: 38vw;
+    }
+
+    .planet-top {
+        width: 45vw;
+        height: 25vh;
+        top: -12vh;
+        left: 38vw;
+    }
+
+
+    .logo {
+        width: 65vw;
+
+    }
+    
+    .logo p {
+        font-size: 11vw;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .planet-top {
+        top: -9%;
+    }
+}
